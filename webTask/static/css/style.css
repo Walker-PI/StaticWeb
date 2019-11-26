@@ -2,6 +2,185 @@
 header{
     display: block;
     margin-top: 0px;
+    position: static;
     width: auto;
-    height: auto;
+    z-index: 10000;
 }
+
+div{
+    display:block;
+}
+
+.header .part-one{
+    height: 63px;
+    background-color: #333333;
+}
+
+.header .part-one .wpr{
+    width:90%;
+    position: relative;
+}
+
+.header .part-one .wpr .logo{
+    float:left;
+    margin-left: 10%;
+}
+
+.search{
+    float:left;
+    position:relative;
+    margin-top:17px;
+    margin-left:12%;
+    width:50%;
+    height:35px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#525362;
+}
+.search img{
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+}
+.search input{
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    height: 100%;
+    width:100%;
+    padding-left: 10px;
+    padding-right: 30px;
+    border: none;
+}
+.search a{
+    width: 39px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.header .part-one .wpr .login_register{
+    float:right;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.login_register img{
+    position: absolute;
+    right: 100%;
+    top: 20%;
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+}
+
+.login_register span a{
+    top:50%;
+    color:#ffffff;
+    font-size: 18px;
+    line-height: 63px;
+    padding: 3px;
+    opacity:0.8;
+}
+
+.header .part-two{
+    background-color: #222222;
+    height:50px;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.header .part-two .wpr{
+    width:90%;
+    position: relative;
+}
+
+.header .part-two .wpr .menu{
+    margin-left: 130px;
+    margin-top:0;
+    height:100%;
+    position: absolute;
+    left: 0;
+}
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end:1em;
+    margin-inline-start:0;
+    margin-inline-end:0;
+    padding-inline-start:40px;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 12px;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+}
+
+.header .part-two .menu li{
+    float:left;
+}
+
+.header .part-two .menu .one.active{
+    border-bottom-color: #DC1720;
+}
+
+.header .part-two .menu li.active {
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    height: 46px;
+}
+
+.header .part-two .menu li.item{
+    background-color: #2a2a2a;
+    float: left;
+    display: block;
+    font-size: 18px;
+    width: 75px;
+    height: 50px;
+    text-align: center;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+
+    display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+
+    -moz-box-pack: center;/*兼容Firefox*/
+    -webkit-box-pack: center;/*兼容FSafari、Chrome */
+}
+
+.header .part-two .menu li a{
+    color:#ffffff;
+    opacity: 0.6;
+}
+
+.header .part-two li.active {
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}
+
+.header .part-two li.sep{
+    height:50px;
+    width:2px;
+}
+
