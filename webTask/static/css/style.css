@@ -1,5 +1,7 @@
-.page-white {
-	background-color: #fff;
-	color: #000;
-}
 
+header{
+    display: block;
+    margin-top: 0px;
+    width: auto;
+    height: auto;
+}
