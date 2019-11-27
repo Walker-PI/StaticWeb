@@ -1,4 +1,8 @@
 
+body{
+    background-color: #dbdde0;
+}
+
 header{
     display: block;
     margin-top: 0px;
@@ -104,11 +108,12 @@ div{
 }
 
 .header .part-two .wpr .menu{
-    margin-left: 130px;
+    float:left;
+    margin-left: 7.6%;
+
     margin-top:0;
     height:100%;
     position: absolute;
-    left: 0;
 }
 
 ul{
@@ -174,6 +179,22 @@ ul li {
     opacity: 0.6;
 }
 
+a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: inherit;
+    cursor: pointer;
+}
+
+a {
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+}
+
 .header .part-two li.active {
     border-bottom-width: 4px;
     border-bottom-style: solid;
@@ -183,4 +204,247 @@ ul li {
     height:50px;
     width:2px;
 }
+
+.main-one{
+    width:90%;
+    height:700px;
+    margin-top:-20px ;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+    background-color: #ffffff;
+}
+
+.main-one .col-left{
+    float:left;
+    width:20%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.main-one .col-left .total{
+    margin-block-start: 20%;
+    margin-left: 20%;
+}
+
+.main-one .col-left .total img{
+    width: 45px;
+    height: 36px;
+}
+
+.main-one .col-left .total span{
+    font-size: 40px;
+}
+
+.main-one .col-left ul li img{
+    float:left;
+}
+
+.main-one .col-left ul li span{
+    font-size: 30px;
+    display: block;
+    width:100%;
+    height:85px;
+    margin-left: -8%;
+    /*background-color: #e6e6e6;*/
+
+    display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+
+}
+
+.main-one .col-left ul li  span img{
+    margin-left: 10%;
+    margin-block-start: 4%;
+    height:30px;
+    width:30px;
+}
+
+.main-one .col-left ul li.sep-block{
+    width:100%;
+    background-color: #e6e6e6;
+    height:2px;
+}
+
+.main-one .display-photo{
+    float:right;
+    width:70%;
+    margin-block-start: 1.5%;
+    margin-right: 5%;
+    height:92%;
+    background-color: #ffffff;
+}
+
+.main-one .display-photo .scroller{
+    width:100%;
+    margin-block-start: 2%;
+    height: 80%;
+}
+
+.main-one .display-photo .scroller img{
+    width:100%;
+    height:110%;
+}
+
+.main-one .display-photo ul{
+    width:100%;
+    height:30px;
+   margin-left: 40%;
+    margin-top:5%;
+
+}
+.main-one .display-photo ul li{
+    float:left;
+}
+
+.main-one .display-photo .ui-switchable-trigger {
+    display: inline-block;
+    cursor: pointer;
+    margin: 12px 4px 0;
+    width: 0;
+    height: 0;
+    border: 8px solid #E0E0E0;
+    border-radius: 5px;
+    color: transparent;
+}
+.main-one .display-photo .current {
+    position: relative;
+    border: 8px solid #F60;
+}
+
+.main-two{
+    width:90%;
+    height:700px;
+    margin-top:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+    background-color: #525362;
+}
+.main-two .player{
+    float:left;
+    display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+
+    -moz-box-pack: center;/*兼容Firefox*/
+    -webkit-box-pack: center;/*兼容FSafari、Chrome */
+}
+
+
+.main-three{
+    width:90%;
+    height:2100px;
+    margin-top:10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+    background-color: #ffffff;
+}
+
+.main-three .line{
+    width:95%;
+    height:650px;
+    margin-top:10px;
+    margin-left:3%;
+    margin-right:2%;
+    display: block;
+    background-color: white;
+}
+
+.main-three .line .left{
+    float:left;
+    width:50%;
+    margin-top:2%;
+}
+
+.main-three .line .right{
+    float:right;
+    width:46%;
+    margin-top:2%;
+}
+
+.main-three .line .left span{
+    display: block;
+    background-color: #E0E0E0;
+    width:91.5%;
+    height:20%;
+    margin-top:2%;
+}
+
+.main-three .line .right span{
+    display: block;
+    background-color: #E0E0E0;
+    width:100%;
+    height:50%;
+    margin-top:2%;
+}
+
+
+footer {
+    display: block;
+    margin-top:30px;
+    background: #333;
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+
+footer span{
+    color:#E0E0E0;
+    display: -moz-box;/*兼容Firefox*/
+    display: -webkit-box;/*兼容FSafari、Chrome*/
+    font-size: 16px;
+    -moz-box-align: center;/*兼容Firefox*/
+    -webkit-box-align: center;/*兼容FSafari、Chrome */
+
+    -moz-box-pack: center;/*兼容Firefox*/
+    -webkit-box-pack: center;/*兼容FSafari、Chrome */
+}
+
+.main_page{
+    display: block;
+    height: 650px;
+}
+
+.main_page .login-block{
+    display: block;
+    width:30%;
+    height:60%;
+    background-color: #ffffff;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.main_page .login-block .account{
+    display: block;
+    margin-left: 5%;
+}
+
+.main_page .login-block .account span{
+
+}
+
+.main_page .login-block .account input{
+
+}
+
+.main_page .login-block .password span{
+    float: left;
+    margin-top:2%;
+    margin-left: 5%;
+}
+
+.main_page .login-block .password a{
+    float: right;
+    margin-top:2%;
+
+}
+
+.main_page .login-block .
+
 
