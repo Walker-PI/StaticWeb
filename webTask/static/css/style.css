@@ -369,7 +369,7 @@ a {
 
 .main-three .line .right{
     float:right;
-    width:46%;
+    width:50%;
     margin-top:2%;
 }
 
@@ -384,11 +384,14 @@ a {
 .main-three .line .right span{
     display: block;
     background-color: #E0E0E0;
-    width:100%;
+    width:91.5%;
     height:50%;
     margin-top:2%;
 }
 
+.main-three .line .item img{
+    width:91.5%;
+}
 
 footer {
     display: block;
@@ -509,8 +512,6 @@ a{
     margin-top:8%;
     margin-bottom: 0;
 }
-
-
 
 .register-page{
     display: block;
