@@ -205,6 +205,10 @@ a {
     width:2px;
 }
 
+.header .part-one .wpr .login_register a:hover{
+    color:#FF6600;
+}
+
 .main-one{
     width:90%;
     height:700px;
@@ -406,45 +410,195 @@ footer span{
     -webkit-box-pack: center;/*兼容FSafari、Chrome */
 }
 
-.main_page{
+.login-page{
     display: block;
+    width:100%;
     height: 650px;
+    position: relative;
 }
 
-.main_page .login-block{
-    display: block;
-    width:30%;
-    height:60%;
+.login-page .wrap{
+    width:400px;
+    height:480px;
+    margin:50px auto;
+    border: 1px solid #8A8989;
     background-color: #ffffff;
-    margin-left: 35%;
-    margin-right: 35%;
 }
 
-.main_page .login-block .account{
-    display: block;
-    margin-left: 5%;
+.login-page .wrap .login-header{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    background-color: #2a2a2a;
+    background-repeat: no-repeat;
 }
 
-.main_page .login-block .account span{
-
+.login-page .wrap .login-header h3{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 30px;
+    margin-block-start: 1%;
+    color: #e6e6e6;
 }
 
-.main_page .login-block .account input{
-
-}
-
-.main_page .login-block .password span{
-    float: left;
-    margin-top:2%;
-    margin-left: 5%;
-}
-
-.main_page .login-block .password a{
+.login-page .wrap .login-header a{
+    display: inline-block;
+    line-height: 50px;
     float: right;
+    margin:auto 15px;
     margin-top:2%;
-
 }
 
-.main_page .login-block .
+.login-page .wrap .login-main{
+    width:100%;
+    height:400px;
+    margin:0 auto;
+}
+
+.login-page .wrap .login-main .phoneIn{
+    float: right;
+    display: inline-block;
+    font-size: 16px;
+    color: blue;
+    background-repeat: no-repeat;
+    margin-top:30px;
+    margin-right:-10%;
+}
+
+.login-main .inputDiv{
+    display: inline-block;
+    float: left;
+    width:96%;
+    height: 40px;
+    font-size: 17px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+.login-main .pull-right{
+    display: inline-block;
+    float: right;
+    margin-right:2%;
+    color:blue;
+}
+
+.login-main .smBtn{
+    background-color:#2066c5;
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    height:50px;
+    border-radius:40px;
+}
+
+.smBtn:hover{
+    background:#4067ee;
+}
+
+a{
+    text-decoration: none;
+    color:#2647cb;
+}
+
+.login-main h4{
+    float: left;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top:8%;
+    margin-bottom: 0;
+}
 
 
+
+.register-page{
+    display: block;
+    width:100%;
+    height: 650px;
+    position: relative;
+}
+
+.register-page .wrapper{
+    width:400px;
+    height:500px;
+    margin:50px auto;
+    border: 1px solid #8A8989;
+    background-color: #ffffff;
+}
+
+.register-page .wrapper .register-header{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    background-color: #2a2a2a;
+    background-repeat: no-repeat;
+}
+
+.register-page .wrapper .register-header h3{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 30px;
+    margin-block-start: 1%;
+    color: #e6e6e6;
+}
+
+.register-page .wrapper .register-header a{
+    display: inline-block;
+    line-height: 50px;
+    float: right;
+    margin:auto 15px;
+    margin-top:2%;
+}
+
+.register-page .wrapper .register-main{
+    width:100%;
+    height:400px;
+    margin:0 auto;
+}
+
+
+.register-main .inputDiv{
+    display: inline-block;
+    float: left;
+    width:96%;
+    height: 40px;
+    font-size: 17px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:2%;
+    margin-right: 2%;
+}
+
+.register-main .pull-right{
+    display: inline-block;
+    float: right;
+    margin-right:2%;
+    color:blue;
+}
+
+.register-main .smBtn{
+    background-color:#2066c5;
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    height:50px;
+    border-radius:40px;
+}
+
+.smBtn:hover{
+    background:#4067ee;
+}
+
+a{
+    text-decoration: none;
+    color:#2647cb;
+}
+
+.register-main h4{
+    float: left;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top:5%;
+    margin-bottom: 0;
+}

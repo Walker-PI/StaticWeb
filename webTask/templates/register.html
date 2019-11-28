@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>中国国家地理</title>
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 <body>
 <header class="header">
@@ -14,24 +14,76 @@
         <div class="wpr">
             <div class="logo">
                 <!---logo-->
+                <img src="../static/img/logo-top.png">
             </div>
-            <form class="search">
-                <!--搜索框-->
+            <form class="search" target="_blank" action=""  id="search_box">
+                <input type="text" name="q">
+                <input type="submit" value="搜索"  style="opacity: 0;height:0;width:0;padding:0;">
+                <input type="hidden" name="cc" style="opacity: 0;height:0;width:0;padding:0;">
+                <img src="../static/img/search_btn.png">
             </form>
             <div class="login_register">
-                <!--登录注册-->
+                <img src="../static/img/login.png">
+                <span >
+                        <a href="../templates/login.html">登录</a>
+                    </span>
+                <span>
+                         <a>/</a>
+                     </span>
+                <span>
+                        <a href="../templates/register.html">注册</a>
+                    </span>
             </div>
         </div>
     </div>
 
     <div class="part-two">
-        <!--写首页等-->
+        <div class="wpr">
+            <ul class="menu">
+                <li class="one item active"><a href="../index.html">首页</a></li>
+                <li class="sep"></li>
+                <li class="two item" ><a href="../index.html">画廊</a></li>
+                <li class="sep"></li>
+                <li class="three item"><a href="../index.html">景观</a></li>
+                <li class="sep"></li>
+                <li class="four item"><a href="../index.html">谈资</a></li>
+                <li class="sep"></li>
+                <li class="five item"><a href="../index.html">作者</a></li>
+                <li class="sep"></li>
+                <li class="six item"><a href="../index.html" >活动</a></li>
+                <li class="sep"></li>
+                <li class="seven item"><a href="../index.html" >商城</a></li>
+                <li class="sep"></li>
+            </ul>
+        </div>
     </div>
 </header>
-<div class="register">
-    <!---注册框-->
+
+<div class="register-page">
+    <div class="wrapper">
+        <div class="register-header">
+            <h3>用户注册</h3>
+            <a href="../index.html"><img src="../static/img/close.png" style="width:30px;height:30px;"></a>
+        </div>
+
+        <div class="register-main">
+            <form action="">
+                <h4>用户名：</h4>
+                <input type="text" class="inputDiv">
+                <h4>密码：</h4>
+                <input type="password" class="inputDiv">
+                <h4>确认密码：</h4>
+                <input type="password" class="inputDiv">
+                <input type="submit" value="注册" class="inputDiv smBtn">
+            </form>
+        </div>
+
+    </div>
 </div>
-<footer class="">
+
+
+<footer >
+    <span>使用条款和隐私条款。版权所有，保留一切权利。</span>
     <!--网页末尾内容-->
 </footer>
 </body>
