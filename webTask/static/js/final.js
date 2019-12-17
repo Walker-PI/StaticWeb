@@ -14,8 +14,8 @@ function md5_2(str){
     return md5(md5(str+key));
 }
 //创建数据库的连接
-let db = mysql.createPool({host: "47.102.143.64", port: "3306", user: "citcup", password: "123456", database: "CitcupData"})
-
+//let db = mysql.createPool({host: "47.102.143.64", port: "3306", user: "citcup", password: "123456", database: "CitcupData"})
+let db = mysql.createPool({host: "192.168.0.102", port: "3306", user: "root", password: "root", database: "geography"});
 console.log("mysql connected!");
 
 //创建服务
