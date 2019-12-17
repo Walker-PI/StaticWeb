@@ -17,7 +17,7 @@
                     var reg= /^(?![^a-zA-Z]+$)(?!\D+$).{6,15}$/;
                     if (!username){
                         alert("Username cannot be empty! ");
-                    }else if(!/^\w{6,16}$/.test(username)){
+                    }else if(username.length >= 6 && username <= 16){
                         alert( "Username is invalid! \n You should make sure 6<= len(username) <= 16");
                     }else if(!password){
                         alert("Password cannot be empty! ");
