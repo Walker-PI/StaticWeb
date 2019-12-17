@@ -7,6 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>中国国家地理</title>
     <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/jquery.js"></script>
+    <script>
+            $(function(){
+                $("#login_button").click(function(){
+                    var username=$("#user").val();
+                    var password=$("#pwd").val();
+
+                    var reg= /^(?![^a-zA-Z]+$)(?!\D+$).{6,15}$/;
+                    if (!username){
+                        alert("Username cannot be empty! ");
+                    }else if(!/^\w{6,16}$/.test(username)){
+                        alert( "Username is invalid! \n You should make sure 6<= len(username) <= 16");
+                    }else if(!password){
+                        alert("Password cannot be empty! ");
+                    }else if(!reg.test(password)){
+                        alert("Password is invalid! \n Passwords should consist of a combination of letters and Numbers, including at least one letter and number, and should be 6-15 in length.");
+                    }else{
+                        $.ajax({
+                           url: "http://localhost:8080/login",
+                           method: "post",
+                           data: {
+                              username: $("#user").val(),
+                               password: $("#pwd").val()
+                             },
+                           dataType: "json",
+                           success(res){
+                            if(res.ok == false){
+                               alert("Login failed! \n"+res.msg);
+                            }else{
+                                window.location.href="../about.html";
+                            }
+                            },
+                         error(err){
+                              alert("Request error!"+JSON.stringify(err));
+                           }
+                      })
+                    }
+                })
+            })
+        </script>
 </head>
 <body>
 <header class="header">
@@ -70,14 +110,14 @@
             <a href="" class="phoneIn">短信快捷登录</a>
             <form action="">
                 <h4>用户名：</h4>
-                <input type="text" class="inputDiv">
+                <input type="text" class="inputDiv", id="user">
                 <h4>密码：</h4>
-                <input type="password" class="inputDiv">
+                <input type="password" class="inputDiv", id="pwd">
                 <p class="inputDiv">
                     <input type="checkbox" value="checked" checked="checked"><label>记住密码</label>
                     <a href="" class="pull-right">忘记密码</a>
                 </p>
-                <input type="submit" value="登录" class="inputDiv smBtn">
+                <input type="button" value="登录" class="inputDiv smBtn", id="login_button">
                 <a href="register.html" class="pull-right">立即注册</a>
             </form>
         </div>
